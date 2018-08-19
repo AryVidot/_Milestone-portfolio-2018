@@ -133,9 +133,7 @@ header{
   height: 100vh;
   padding: 60px 20px;
   color: #2e4863;
-
 }
-
 
 .wrapper-about p{
   text-align: justify;
@@ -174,7 +172,7 @@ header{
 }
 
 #projects{
-  background-color: #fff;
+  background-color: #476d26;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -182,12 +180,39 @@ header{
   display: grid;
 }
 
-.wrapper-projects h2{
-  position: absolute;
-  top: 80px;
-  text-align: center;
+.wrapper-projects{
+  margin: 20px;
+  padding: 20px;
 }
 
+.wrapper-projects h2{
+  text-align: center;
+  font-size: 60px;
+  color: #fff;
+}
+
+.projects{
+  display: grid;
+}
+
+.projects ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.projects ul li{
+  list-style-type: none;
+}
+
+.projects ul li a{
+    text-decoration: none;
+      text-align: center;
+}
+
+img{
+  border: 2px solid #fff;
+}
 
 #contact{
   background-color: #fff;
