@@ -40,6 +40,7 @@ header{
   height: 100vh;
   padding: 0 20px;
   display: flex;
+  z-index: 999;
 
 }
 
@@ -176,8 +177,8 @@ header{
   background-size: cover;
   background-position: center;
   height: 100vh;
-  padding: 0 20px;
-  display: grid;
+  padding: 0;
+  margin: 0;
 }
 
 .wrapper-projects{
@@ -192,22 +193,28 @@ header{
 }
 
 .projects{
-  display: grid;
+  display: flex;
 }
 
 .projects ul{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  text-align: centre;
+
 }
 
 .projects ul li{
   list-style-type: none;
+  justify-content: centre;
+  flex: 1;
 }
 
 .projects ul li a{
-    text-decoration: none;
-      text-align: center;
+  text-decoration: none;
+  text-align: center;
+}
+li a p{
+  text-align: center;
 }
 
 img{
