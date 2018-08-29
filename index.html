@@ -9,6 +9,8 @@
 	<link href="css/main.css" rel="stylesheet">
 </head>
 <body>
+
+	<!-- HEADER SHOWCASE -->
 	<header>
 		<div class="wrapper" id="home">
 			<div class="main-nav">
@@ -39,7 +41,9 @@
 			</div>
 		</div>
 	</header>
-	<main>
+	<main id="main">
+
+		<!-- ABOUT SECTION -->
 		<section class="about" id="about">
 			<div class="wrapper-about">
 				<!-- <h2>About Me</h2> -->
@@ -48,71 +52,80 @@
 				Currently living in <span class="crossed">Nice,France</span>, <span class="crossed">Vitoria-Gasteiz, Spain</span>,<br>
 				<span class="crossed">Montpellier, France</span>,<br>
 				<span class="crossed">Paris,France</span>, London, UK.</p>
-				<div class="btn">
-					<a href="read-more.html" target="_blank">Read More</a>
-				</div>
+				<a href="read-more.html" target="_blank" class="btn">Read More</a>
 			</div>
 		</section>
-		<section id="projects">
-			<div class="wrapper-projects">
-				<h2>Projects</h2>
-				<div class="projects">
-					<ul>
-						<li>
-							<img alt="Project ONE" src="img/jubilee-thumbnail.png"><br><a href="#1" target="_blank">Project ONE</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, nemo.</p>
-						</li>
-						<li>
-							<img alt="Project TWO" src="img/rogue-pickings-thumbnail.png"><br><a href="#2" target="_blank">Project TWO</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, est.</p>
-						</li>
-						<li>
-							<img alt="Project THREE" src="img/rogue-pickings-thumbnail.png"><br><a href="#3" target="_blank">Project THREE</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, laudantium!</p>
-						</li>
-						<li>
-							<img alt="Project THREE" src="img/jubilee-thumbnail.png"><br><a href="#3" target="_blank">Project THREE</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, laudantium!</p>
-						</li>
 
-					</ul>
+		<!-- PROJECTS SECTION -->
+		<section class="projects" id="projects">
+				<h2>Projects</h2>
+				<div id="projects-list" class="projects-list">
+							<div class="projects-item">
+												<a href="#1" target="_blank"><img alt="Project ONE" src="img/jubilee-thumbnail.png" class="image"></a>
+												<div class="overlay">
+													<div class="text">Project ONE</div>
+													<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, nemo.</p> -->
+												</div>
+							</div>
+							<div class="projects-item">
+												<a href="#2" target="_blank"><img alt="Project TWO" src="img/rogue-pickings-thumbnail.png" class="image"></a>
+												<div class="overlay">
+													<div class="text">Project TWO</div>
+													<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, est.</p> -->
+												</div>
+
+							</div>
+							<div class="projects-item">
+												<a href="#3" target="_blank"><img alt="Project THREE" src="img/rogue-pickings-thumbnail.png" class="image"></a>
+												<div class="overlay">
+													<div class="text">Project THREE</div>
+													<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, laudantium!</p> -->
+												</div>
+							</div>
+							<div class="projects-item">
+												<a href="#4" target="_blank"><img alt="Project FOUR" src="img/jubilee-thumbnail.png" class="image"></a>
+												<div class="overlay">
+													<div class="text">Project FOUR</div>
+													<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, laudantium!</p> -->
+												</div>
+							</div>
 				</div>
-			</div>
 		</section>
+
+		<!-- CONTACT SECTION -->
 		<section class="contact" id="contact">
-			<div class="wrapper-contact">
+			<div>
 				<h2>Let's Connect</h2>
-				<div class="third-width">
+			</div>
+			<div class="contact-box">
+				<div class="box">
 					<h3>Hire me</h3>
 					<p>+44 7896512788</p><a href="mailto:aryvid@gmail.com" target="_blank">aryvid@gmail.com</a>
 				</div>
-				<div class="third-width">
+				<div class="box">
 					<h3>Follow Me</h3>
 					<ul>
 						<li>
-							<a href="https://www.linkedin.com/in/ary-vidot/" target="_blank"><img alt="LinkedIn" src="img/linkedin.svg"></a>
+							<a href="https://www.linkedin.com/in/ary-vidot/" target="_blank"><img class="social-icon" alt="LinkedIn" src="img/linkedin.svg"></a>
 						</li>
 						<li>
-							<a href="https://github.com/AryVidot" target="_blank"><img alt="GitHub" src="img/github.svg"></a>
+							<a href="https://github.com/AryVidot" target="_blank"><img class="social-icon" alt="GitHub" src="img/github.svg"></a>
 						</li>
 						<li>
-							<a href="#" target="_blank"><img alt="Twitter" src="img/twitter.svg"></a>
-						</li>
-						<li>
-							<a href="#" target="_blank"><img alt="Slack" src="img/slack.svg"></a>
+							<a href="#" target="_blank"><img class="social-icon" alt="Twitter" src="img/twitter.svg"></a>
 						</li>
 					</ul>
 				</div>
-				<div class="third-width">
+				<div class="box">
 					<h3>Meet me</h3>
 					<p>London - UK</p>
 					<p>Let's meet for a cup of coffee</p>
 				</div>
-			</div>
+				</div>
 		</section>
-		<footer>
-			<small>Ary Vidot - Copyright 2018</small>
-		</footer>
 	</main>
+	<footer>
+		<div>Copyright 2018 | Ary Vidot</div>
+	</footer>
 </body>
 </html>
