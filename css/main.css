@@ -41,16 +41,18 @@ header {
 	z-index: 999;
 }
 h2 {
-	font-size: 30px;
+	font-size: 40px;
 	text-align: center;
 	padding: 50px;
 	margin: 20px;
   text-transform: uppercase;
+	font-weight: bold;
 }
 h3 {
-	font-size: 20px;
+	font-size: 30px;
 	text-align: center;
 	padding: 20px;
+	font-weight: bold;
 }
 .main-nav {
 	/* mix-blend-mode: exclusion; */
@@ -176,7 +178,8 @@ h3 {
 	font-weight: bold;
 }
 .image {
-	border: 2px solid #fff;
+	/* border: 2px solid #fff; */
+	border-radius: 10px;
 }
 
 /* .overlay {
@@ -195,6 +198,7 @@ h3 {
 img:hover {
   opacity: 1;
   border: 2px solid #f97443;
+	border-radius: 9px;
 
 }
 /**** CONTACT SECTION ****/
@@ -204,11 +208,12 @@ img:hover {
 	background-size: cover;
 	background-position: center;
 	height: 600px;
+	width: 100%;
 	padding: 0 20px;
 }
-#contact{
+/* #contact{
   align-items: center;
-}
+} */
 .title h2{
   padding-top: 100px;
 }
