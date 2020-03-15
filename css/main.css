@@ -12,174 +12,188 @@ font-family: 'Nunito', sans-serif;
 font-family: 'Alegreya', serif;
 */
 
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* --------------------  General Styles ------------------ */
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-html, body {
-	margin: 0;
-	padding: 0;
-	width: 100%;
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 body {
-	color: #2e4863;
-	font-family: 'Nunito Sans', sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 1.8em;
-	min-height: 100vh;
-	width: 100%;
+  color: #2e4863;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8em;
+  min-height: 100vh;
+  width: 100%;
 }
-header {
-	background-image: url("../img/home1.jpg");
-	background-position: center;
-	background-size: cover;
-	display: flex;
-	height: 100vh;
-	padding: 0 20px;
-	z-index: 999;
+.ctnr {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.25em;
 }
+
+/* ====================
+  TYPOGRAPHY
+  =================== */
 h2 {
-	font-size: 40px;
-	font-weight: bold;
-	margin: 20px;
-	padding: 50px;
-	text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 20px;
+  padding: 50px;
+  text-align: center;
   text-transform: uppercase;
 }
 h3 {
-	font-size: 30px;
-	text-align: center;
-	padding: 20px;
-	font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
 }
-.main-nav {
-	/* mix-blend-mode: exclusion; */
-	position: fixed;
-	top: 0;
-	left: 0;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 5rem;
-	/* border-bottom: 1px solid #476d26; */
+
+/* ====================
+  LAYOUT
+  =================== */
+
+header {
+  background-image: url("../img/home.jpg");
+  background-position: center;
+  background-size: cover;
+  /* display: flex; */
+  height: 100vh;
+  padding: 0 20px;
+  z-index: 999;
 }
-.logo>a {
-	position: absolute;
-	text-decoration: none;
-	color: #2e4863;
-	font-size: 30px;
-	font-weight: bolder;
-	text-transform: uppercase;
-	line-height: 80px;
-	letter-spacing: 1px;
-	padding: 0em 2em;
+.logo > a {
+  /* position: absolute; */
+  text-decoration: none;
+  color: #2e4863;
+  font-size: 1.875em;
+  font-weight: bolder;
+  text-transform: uppercase;
+  line-height: 1.875em;
+  letter-spacing: 1px;
+  padding: 0em 2em;
 }
+
 .logo a:hover {
-	color: #f97443;
+  color: #f97443;
 }
-.navbar {
-	float: right;
-	line-height: 80px;
-	margin: 0 2em;
+
+/* Navigation */
+
+nav {
+  line-height: 80px;
+  margin: 0 2em;
 }
-.navbar ul {
-	list-style: none;
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
-.navbar ul li {
-	display: inline-block;
+nav li {
+  margin: 1em;
 }
-.navbar ul li a {
-	text-decoration: none;
-	display: inline-block;
-	text-transform: uppercase;
-	color: #2e4863;
-	font-size: 16px;
-	font-weight: bolder;
-	letter-spacing: 1px;
-	padding: 0px 20px;
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #2e4863;
+  font-size: 1rem;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  padding: 0.25em 0;
 }
-.navbar ul li a:hover {
-	color: #f97443;
+nav a:hover {
+  color: #f97443;
 }
-.intro h1 {
-	position: absolute;
-	top: 40%;
-	left: 20%;
-	transform: translate(-40px, -20px);
-	font-family: 'Nunito Sans', sans-serif;
-	font-size: 72px;
-	/* display: none; */
+.ctnr-hero h1 {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translate(-40px, -20px);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 72px;
+  /* display: none; */
 }
 /**** ABOUT ****/
 
 .about {
-	display: block;
-	background-size: cover;
-	text-align: center;
-	background-color: #ffc3ba;
-	padding: 60px 20px;
-	color: #2e4863;
+  display: block;
+  background-size: cover;
+  text-align: center;
+  background-color: #ffc3ba;
+  padding: 60px 20px;
+  color: #2e4863;
 }
 /**** CHECK TEXT SIZING ****/
 
-.wrapper-about {
-	height: auto;
-	font-size: 55px;
-	letter-spacing: -2px;
-	font-weight: 900;
-	line-height: 60px;
-	padding: 40px 145px 0 145px;
+.ctnr-about {
+  height: auto;
+  font-size: 55px;
+  letter-spacing: -2px;
+  font-weight: 900;
+  line-height: 60px;
+  padding: 40px 145px 0 145px;
 }
 .crossed {
-	text-decoration: line-through;
-	color: #f97443;
+  text-decoration: line-through;
+  color: #f97443;
 }
 .btn {
-	display: inline-block;
-	text-decoration: none;
-	margin: 10px 0;
-	padding: 0 10px;
-	font-size: 26px;
-	font-weight: 900;
-	border: 4px solid #2e4863;
-	border-radius: 8px;
-	color: #f97443;
+  display: inline-block;
+  text-decoration: none;
+  margin: 10px 0;
+  padding: 0 10px;
+  font-size: 26px;
+  font-weight: 900;
+  border: 4px solid #2e4863;
+  border-radius: 8px;
+  color: #f97443;
 }
 .btn:hover {
-	color: #2e4863;
-	border: 4px solid #f97443;
+  color: #2e4863;
+  border: 4px solid #f97443;
 }
 /**** PROJECTS SECTIONS ****/
 
-.projects {
-	background-color: #fff;
-	background-size: cover;
-	background-position: center;
-	height: auto;
+.ctnr-projects {
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+  height: auto;
 }
 .projects-list {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: auto;
-	grid-gap: 3px;
-	padding: 0;
-	margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 3px;
+  padding: 0;
+  margin: 0;
 }
 .projects-item {
-	/* border: 1px solid red; */
-	text-align: center;
-	margin: 0;
-	padding: 20px;
+  /* border: 1px solid red; */
+  text-align: center;
+  margin: 0;
+  padding: 20px;
 }
 .text {
-	text-align: center;
-	font-weight: bold;
+  text-align: center;
+  font-weight: bold;
 }
 .image {
-	/* border: 2px solid #fff; */
-	border-radius: 10px;
+  /* border: 2px solid #fff; */
+  border-radius: 10px;
 }
 
 /* .overlay {
@@ -198,56 +212,55 @@ h3 {
 img:hover {
   opacity: 1;
   border: 2px solid #f97443;
-	border-radius: 9px;
-
+  border-radius: 9px;
 }
 /**** CONTACT SECTION ****/
 
 .contact {
-	background-color: #ffc3ba;
-	background-size: cover;
-	background-position: center;
-	height: 600px;
-	width: 100%;
-	padding: 0 20px;
+  background-color: #ffc3ba;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 100%;
+  padding: 0 20px;
 }
 /* #contact{
   align-items: center;
 } */
-.title h2{
+.title h2 {
   padding-top: 100px;
 }
 .contact-box {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
 }
 .box {
-	text-align: center;
+  text-align: center;
 }
 .social {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .social li {
-	text-align: center;
-	list-style: none;
+  text-align: center;
+  list-style: none;
 }
 ul.social {
-	list-style-type: none;
+  list-style-type: none;
 }
 i {
-	color: #f97443;
-	font-size: 2em;
-	display: inline-block;
+  color: #f97443;
+  font-size: 2em;
+  display: inline-block;
 }
 /*** FOOTER SECTION ***/
 
 footer {
-	text-align: center;
-	font-family: 'Nunito Sans', sans-serif;
-	font-size: 10px;
-	font-weight: lighter;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 10px;
+  font-weight: lighter;
 }
 
 /* @media screen and  */
